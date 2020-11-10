@@ -1,0 +1,310 @@
+
+/*---------------------- Navigation ------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    margin: 20px 0px 10px 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo a{
+    font-size: 32px;   
+    font-weight: bold;
+    color: white;
+}
+
+.logo p{
+    font-size: 18px;  
+    color: white; 
+}
+
+.menu {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 50px 20px 35px;
+}
+
+.menu ul li a{
+    font-size: 14px;
+    color: white;
+}
+
+
+/*------------------------- Job Stress -------------------------*/
+
+.wrapper {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.wrapper::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.background-image {
+    padding-top: 120px;
+}
+
+.background-image img {
+    width: 100%;
+}
+
+.job-stress{
+    padding-top: 40px;
+    line-height: 25px;
+}
+
+.job-stress h1 {
+    color: black;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-bottom: black 2px solid;
+}
+
+.job-stress p {
+    padding-top: 10px;
+    list-style: circle;
+}
+.job-stress h2{
+    padding-top: 20px;
+}
+
+.job-stress p span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*--------------------Footer---------------------*/
+footer {
+    background-color: #d8d3cd;
+    height: 350px;
+    color: #111;
+}
+
+.container-footer {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.left-column {
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 30px;
+    padding-left: 5%;
+}
+
+.left-column h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.s-media {
+    padding: 20px 0px 20px 0px;
+}
+
+.s-media a{
+    font-size: 16px;
+    padding: 5px;
+    color: #111;
+}
+
+.right-column {
+    float: left;
+    padding: 10px;
+    padding-left: 5%;
+    padding-bottom: 30px;
+}
+
+.right-column h3 {
+    color: #111;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.right-column  p{
+    color: #111;
+    margin: 15px auto;
+    letter-spacing: 1px;
+}
+
+
+.newsletter {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #111;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #111;
+    font-weight: 500px;
+    outline: none;
+    min-width: 260px;
+    letter-spacing: 1px;
+}
+
+.text-box::placeholder {
+    color: #111;
+    opacity: 1;
+}
+
+.button {
+    margin-left: 10px;
+    padding: 10px 12px;
+    font-size: 16px;
+    color: #111;
+    border: none;
+    background: transparent;
+    border: 1px solid #111;
+    border-radius: 10px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.copyright {
+    background: lightgray;
+    border-bottom: 3px solid #111;
+}
+
+.copyright p {
+    margin: 5px auto;
+    text-align: center;
+    font-size: 14px;
+    color: #111;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 320px){ 
+
+/*--------------------Footer---------------------*/
+    .button {
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+
+/*--------------------Footer---------------------*/
+    .button {
+        margin-top: 10px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 560px) {
+/*----------------------- Navigation ------------------------*/
+    .logo {
+        float: none;
+        text-align: center;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .menu {
+        float: none;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        margin: 15px 0px 10px 20px;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+/*------------------------- Job stress -------------------------*/
+    .wrapper {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+/* ----------- Footer ----------------------*/
+    footer {
+        height: 250px;
+    }
+
+    .left-column {
+        width: 50%;
+    }
+
+    .right-column {
+        width: 50%;
+        padding-left: 10px;
+        float: right;
+        padding-top: 30px;
+    }
+
+}
+    
+@media only screen and (min-width: 1024px){
+
+/*------------------------- Job stress -------------------------*/
+    .wrapper {
+        width: 70%;
+        margin: 0px auto;
+    }
+
+/*--------------------Footer---------------------*/
+    footer {
+        background-color: #d8d3cd;
+        height: 190px;
+        color: #111;
+    }
+
+} 
+
+
+@media only screen and (min-width: 1440px) {
+/*--------------------Footer---------------------*/
+    footer {
+        background-color: #d8d3cd;
+        height: 190px;
+        color: #111;
+    }
+
+    .right-column {
+        width: 30%;
+        padding-left: 10px;
+        float: right;
+        padding-top: 30px;
+        padding-right: 30px;
+    }
+    
+}
