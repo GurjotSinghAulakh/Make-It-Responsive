@@ -74,19 +74,24 @@ nav {
     width: 100%;
 }
 
-.job-stress{
+.about-us{
     padding-top: 120px;
     line-height: 25px;
 }
 
-.job-stress h1 {
+h1 {
     color: black;
     font-size: 22px;
     letter-spacing: 1px;
     border-bottom: black 2px solid;
 }
 
-.job-stress p {
+.job-stress{
+    padding-top: 120px;
+    line-height: 25px;
+}
+
+p {
     padding-top: 10px;
     list-style: circle;
 }
